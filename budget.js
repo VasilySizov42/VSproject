@@ -141,5 +141,6 @@ console.log( "1"[0] )ж
 if (0 || "" || 2 || undefined || true || falsе) {
     console.log('true')
 } else {console.log('false')}
+
 let a = '123', b = 123; 
-console.log(+"Infinity" );
+console.log(+"Infinity" );a
