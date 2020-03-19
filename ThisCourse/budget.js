@@ -137,9 +137,10 @@ let y = 1;
 let x = [ ] + 1 + 2;
 console.log(x);
 console.log(null || 2 && 3 || 4);
-console.log( "1"[0] )ж
+console.log( "1"[0] );
 if (0 || "" || 2 || undefined || true || falsе) {
     console.log('true')
 } else {console.log('false')}
+
 let a = '123', b = 123; 
-console.log(+"Infinity" );
+console.log(+"Infinity" );a
