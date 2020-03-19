@@ -4,6 +4,10 @@
 #Folders
 JS_task_answers-master/
 
+#Files
+*.pdf
+*.jpg
+
 # User-specific files
 *.suo
 *.user

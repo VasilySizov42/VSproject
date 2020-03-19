@@ -23,7 +23,8 @@ let appData = {
             let expKey = prompt('Введите обязательную статью расходов в этом месяце', ''),
                 expValue = +prompt('Во сколько обойдется?', '');
 
-            if (typeof (expKey) === 'string' && typeof (expKey) != null && typeof (expValue) != null &&
+            if (typeof (expKey) === 'string' && typeof (expKey) != null && 
+            typeof (expValue) != null &&
                 expKey != '' && expValue != '' && expKey.length < 50) {
                 console.log('done');
                 appData.expenses[expKey] = expValue;
@@ -93,17 +94,20 @@ let appData = {
     },    
 };
 
+function getProgramContent() {
     console.log("Наша программа включает в себя данные: ");
     for (let key in appData) {
         console.log(key + ' - ' + appData[key]);
     }
+}
 
 /*let j = 0;
 while (j<2) {
     let expKey = prompt('Введите обязательную статью расходов в этом месяце', ''),
     expValue = +prompt('Во сколько обойдется?', '');
 
-if (typeof (expKey) === 'string' && typeof (expKey) != null && typeof (expValue) != null &&
+if (typeof (expKey) === 'string' && typeof (expKey) != null && 
+typeof (expValue) != null &&
     expKey != '' && expValue != '' && expKey.length < 50) {
     console.log('done');
     appData.expenses[expKey] = expValue;
@@ -118,7 +122,8 @@ do {
     let expKey = prompt('Введите обязательную статью расходов в этом месяце', ''),
     expValue = +prompt('Во сколько обойдется?', '');
 
-if (typeof (expKey) === 'string' && typeof (expKey) != null && typeof (expValue) != null &&
+if (typeof (expKey) === 'string' && typeof (expKey) != null && 
+typeof (expValue) != null &&
     expKey != '' && expValue != '' && expKey.length < 50) {
     console.log('done');
     appData.expenses[expKey] = expValue;
@@ -127,3 +132,6 @@ if (typeof (expKey) === 'string' && typeof (expKey) != null && typeof (expValue)
     continue;
 }  
 } while (k<2);*/
+
+let y = 1; let x = y = 2;
+console.log(  alert(x++));
